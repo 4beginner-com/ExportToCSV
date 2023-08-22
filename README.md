@@ -29,8 +29,6 @@ This modification increases the versatility of the CsvExport library, making it 
 Country Model
 For demonstration purposes, a Country model is used.
 
-namespace ExportToCSV
-{
     public partial class Country
     {
         public int Id { get; set; }
@@ -51,8 +49,6 @@ namespace ExportToCSV
         }
     }
 
-}
-}
 
 An API controller titled "Export" has been added. Within this controller, the Index method is set up to generate a CSV file titled "Countries.csv", comprising data about countries, but excluding specific fields like "Id" and "NumericId". The AddRows method is invoked with the Country model's data and an array specifying properties to ignore:
 
