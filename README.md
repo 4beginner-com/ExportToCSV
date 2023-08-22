@@ -53,6 +53,7 @@ namespace ExportToCSV
     }
 
     }
+
 An API controller titled "Export" has been added. Within this controller, the Index method is set up to generate a CSV file titled "Countries.csv", comprising data about countries, but excluding specific fields like "Id" and "NumericId". The AddRows method is invoked with the Country model's data and an array specifying properties to ignore:
 
     public class ExportController : Controller
